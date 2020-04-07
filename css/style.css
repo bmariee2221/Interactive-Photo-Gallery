@@ -1,0 +1,88 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:sans-serif;
+    color: #434242;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  /* =================================
+    Layout Containers
+  ==================================== */
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  input[type="text"] {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    height: auto;
+    border: 2px solid rgb(173, 172, 171);
+  }
+  
+  /* =================================
+    Gallery
+  ==================================== */
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .gallery img {
+    padding: 20px 35px;
+  }
+  
+  .lb-data .lb-caption {
+    line-height: 1.5em;
+  }
+  
+  /* =================================
+    Media Queries 768px
+  ==================================== */
+  
+  @media (min-width: 768px) {
+    .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+  }
+  
+  /* =================================
+    Media Queries 1020px
+  ==================================== */
+  
+  @media (min-width: 1020px) {
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+  
+    .search-box {
+      display: inline-block;
+      margin: auto;
+    }
+  }
